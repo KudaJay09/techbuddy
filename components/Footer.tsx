@@ -3,6 +3,7 @@ import { Email, FooterData, Slogan, Socials } from "@/data";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -99,7 +100,13 @@ function Footer() {
         <div className="w-[90%] pt-12 lg:w-[96%] 2xl:w-[90%] mx-auto">
           <div className="grid items-start md:gap-6 grid-cols-[0.5fr_7fr_1fr] 2xl:gap-12">
             <div>
-              <img ref={logoRef} src={"./logo.png"} width={60} height={60} />
+              <Image
+                alt="logo"
+                src="/logo.png"
+                ref={logoRef}
+                width={60}
+                height={60}
+              />
             </div>
 
             <div className="grid grid-cols-5 md:gap-2 xl:gap-10 2xl:gap-14">

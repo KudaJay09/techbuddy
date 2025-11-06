@@ -1,5 +1,6 @@
 import React from "react";
 import ImgsortMobile from "./ImgsortMobile";
+import Image from "next/image";
 
 function Imgsort() {
   const images = [
@@ -22,10 +23,12 @@ function Imgsort() {
             className="flex items-center transition-all duration-500 cursor-pointer group"
             tabIndex={0}
           >
-            <img
+            <Image
               className={`h-auto w-auto rounded-lg transition-all duration-500 ${image.initialScale} group-hover:scale-115 transform-gpu`}
               src={image.src}
               alt={image.alt}
+              width={500}
+              height={500}
             />
           </div>
         ))}

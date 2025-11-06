@@ -1,10 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import InfoCard from "./ui/Cards";
 import { InfoData } from "@/data";
-import { cn } from "@/lib/utils";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
+import InfoCard from "./ui/Cards";
 
 gsap.registerPlugin(ScrollTrigger);
 

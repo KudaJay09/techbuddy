@@ -1,5 +1,6 @@
 import React from "react";
 import "@/styles/JoinUs.css";
+import Image from "next/image";
 
 function ImgsortMobile() {
   const images = [
@@ -19,10 +20,12 @@ function ImgsortMobile() {
             className="flex-shrink-0 w-80 h-60 flex items-center justify-center snap-center group cursor-pointer"
             tabIndex={0}
           >
-            <img
+            <Image
               className={`h-full w-full object-cover rounded-lg transition-all duration-500 JounUs_fade_in_image__MH_a5 ${image.initialScale} group-hover:scale-110 group-focus:scale-110 transform-gpu shadow-lg`}
               src={image.src}
               alt={image.alt}
+              width={500}
+              height={500}
             />
           </div>
         ))}

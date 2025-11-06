@@ -1,7 +1,6 @@
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { capabilities } from "@/data";
 import Image from "next/image";
 import GridCard from "./ui/GridCard";
-import { capabilities, InfoData } from "@/data";
 
 function TrustWorthyLLMs() {
   return (
