@@ -45,42 +45,58 @@ export const capabilities = [
     title: "Template Generation",
     description: "Intelligently creating professional, tailor-made templates.",
     icon: "/product_icon1.png",
+    colSpan: 1,
+    rowSpan: 1,
   },
   {
     title: "Enhanced RAG",
     description:
       "Enhanced Retrieval-Augmented Generation for more relevant, context-based AI responses.",
     icon: "/product_icon2.png",
+    colSpan: 1,
+    rowSpan: 1,
   },
   {
     title: "Professional Writing",
     description: "Refined writing according to a given template.",
     icon: "/product_icon3.png",
+    colSpan: 1,
+    rowSpan: 1,
   },
   {
     title: "Trend Inference",
     description: "Automatically turning data into trends and insights.",
     icon: "/product_icon4.png",
+    colSpan: 1,
+    rowSpan: 1,
   },
   {
     title: "NL2SQL",
     description: "Seamlessly translating natural language into SQL queries.",
     icon: "/product_icon5.png",
+    colSpan: 2,
+    rowSpan: 1,
   },
   {
     title: "Information Extraction",
     description: "Precisely retrieving information from a vast knowledge base.",
     icon: "/product_icon6.png",
+    colSpan: 1,
+    rowSpan: 1,
   },
   {
     title: "Reference Tracing",
     description: "Meticulously tracing information to its source.",
     icon: "/product_icon7.png",
+    colSpan: 1,
+    rowSpan: 1,
   },
   {
     title: "Content Comparison",
     description: "Systematically evaluating content against requirements.",
     icon: "/product_icon8.png",
+    colSpan: 1,
+    rowSpan: 1,
   },
 ];
 

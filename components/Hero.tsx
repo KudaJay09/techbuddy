@@ -15,18 +15,6 @@ function Hero() {
     // Split main text into letters and wrap each in a span
     if (mainTextRef.current) {
       const text = mainTextRef.current.innerHTML;
-      const letters = text.split("").map((char) => {
-        if (char === "<") {
-          // Handle HTML tags like <br />
-          const tagMatch = text.match(/<[^>]+>/);
-          if (tagMatch) {
-            return tagMatch[0];
-          }
-        }
-        if (char === " ") return '<span class="letter"> </span>';
-        if (char === "\n" || char.includes("<br")) return char;
-        return `<span class="letter">${char}</span>`;
-      });
 
       // Reconstruct the text with proper HTML handling
       let reconstructed = "";
@@ -34,7 +22,7 @@ function Hero() {
       while (i < text.length) {
         if (text[i] === "<") {
           // Find the end of the HTML tag
-          let tagEnd = text.indexOf(">", i);
+          const tagEnd = text.indexOf(">", i);
           if (tagEnd !== -1) {
             reconstructed += text.substring(i, tagEnd + 1);
             i = tagEnd + 1;
@@ -112,7 +100,7 @@ function Hero() {
       id="home"
       className="min-h-screen flex items-center justify-centerpx-3 sm:px-4 lg:px-0"
     >
-      <div className="relative m-2 sm:m-4 lg:m-5 bg-gray-50/50 backdrop-blur-sm w-full rounded-2xl">
+      <div className="relative m-2 sm:m-4 lg:mx-5 lg:mt-5 bg-gray-50/50 backdrop-blur-sm w-full rounded-2xl">
         <div className="p-4 sm:p-6 lg:p-8 max-w-[80ch] space-y-1 sm:space-y-2">
           <h3 ref={titleRef} className="text-2xl sm:text-2xl lg:text-3xl">
             TechBuddy

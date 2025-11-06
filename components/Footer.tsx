@@ -192,7 +192,7 @@ function Footer() {
       <div className="xl:hidden p-4">
         <div className="flex flex-col">
           <div className="flex justify-between items-center border-b pb-4">
-            <img src={"./logo.png"} width={60} height={60} />
+            <Image alt="logo" src="/logo.png" width={60} height={60} />
 
             <div className="flex gap-4 ml-4">
               {Socials.map((social) => (
