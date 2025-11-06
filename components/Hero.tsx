@@ -102,12 +102,15 @@ function Hero() {
     >
       <div className="relative m-2 sm:m-4 lg:mx-5 lg:mt-5 bg-gray-50/50 backdrop-blur-sm w-full rounded-2xl">
         <div className="p-4 sm:p-6 lg:p-8 max-w-[80ch] space-y-1 sm:space-y-2">
-          <h3 ref={titleRef} className="text-2xl sm:text-2xl lg:text-3xl">
+          <h3
+            ref={titleRef}
+            className="text-2xl sm:text-2xl lg:text-3xl font-semibold"
+          >
             TechBuddy
           </h3>
           <p
             ref={mainTextRef}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight sm:leading-tight lg:leading-20"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight sm:leading-tight lg:leading-20 gradient-move"
           >
             Empowering <br />
             Every <br />
