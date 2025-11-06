@@ -1,0 +1,45 @@
+import { LuSquareChevronDown } from "react-icons/lu";
+
+function Hero() {
+  return (
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-centerpx-3 sm:px-4 lg:px-0"
+    >
+      <div className="relative m-2 sm:m-4 lg:m-5 bg-gray-50/50 backdrop-blur-sm w-full rounded-2xl">
+        <div className="p-4 sm:p-6 lg:p-8 max-w-[80ch] space-y-1 sm:space-y-2">
+          <h3 className="text-2xl sm:text-2xl lg:text-3xl">TechBuddy</h3>
+          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight sm:leading-tight lg:leading-20">
+            Empowering <br />
+            Every <br />
+            Industry By <br />
+            Trustworthy AI.
+          </p>
+          <p className="max-w-lg text-base sm:text-base lg:text-lg">
+            Connect with experienced tech professionals for personalized
+            mentorship, skill-building, and career guidance.
+          </p>
+        </div>
+        <div className="p-6 sm:p-6 lg:p-8 pt-0 flex flex-col sm:flex-row gap-3 sm:gap-4 items-start">
+          <button className="w-full sm:w-auto px-8 sm:px-10 lg:px-12 py-3 text-sm sm:text-base rounded-full font-medium gotham-medium bg-gradient-to-br from-purple-700 to-blue-900 text-white hover:from-purple-600 hover:to-blue-800 hover:shadow-xl transition-all duration-300 hover:scale-105">
+            Get Started
+          </button>
+          <button className="w-full sm:w-auto px-8 sm:px-10 lg:px-12 py-3 text-sm sm:text-base rounded-full font-medium gotham-medium border-2 border-purple-200 bg-gradient-to-br from-gray-50 to-gray-100 hover:from-white hover:to-gray-50 hover:border-purple-300 transition-all duration-300 hover:scale-105">
+            <span className="bg-gradient-to-r from-purple-700 to-blue-900 bg-clip-text text-transparent">
+              Learn More
+            </span>
+          </button>
+        </div>
+        {/* <div className="flex sm:justify-end pr-4 sm:pr-6 lg:pr-8 pb-6 sm:pb-8"> */}
+        <div className="absolute bottom-4 right-0 pr-5">
+          <LuSquareChevronDown
+            size={30}
+            className="text-gray-300 animate-bounce"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Hero;
