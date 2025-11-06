@@ -217,6 +217,8 @@
 }
 
 .gradient-move {
+    /* Fallback color for unsupported browsers */
+    color: #6b46c1;
     background: linear-gradient(-45deg,
             #000000,
             #6b46c1,
@@ -228,12 +230,17 @@
             #7c3aed);
     background-size: 400% 400%;
     animation: gradient-flow 8s ease-in-out infinite;
+    /* Webkit browsers */
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* Standard property */
+    background-clip: text;
+    color: transparent;
 }
 
 .dark .gradient-move {
+    /* Fallback color for unsupported browsers */
+    color: #a78bfa;
     background: linear-gradient(-45deg,
             #1a1a1a,
             #a78bfa,
@@ -244,6 +251,12 @@
             #2a2a2a,
             #8b5cf6);
     background-size: 400% 400%;
+    /* Webkit browsers */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Standard property */
+    background-clip: text;
+    color: transparent;
 }
 
 @keyframes gradient-flow {
